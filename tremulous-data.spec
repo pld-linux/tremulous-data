@@ -5,8 +5,9 @@ Version:	1.1.0
 Release:	0.1
 License:	Creative Commons
 Group:		Applications/Games
-Source0:	tremulous-%{version}.zip
+Source0:	http://dl.sourceforge.net/tremulous/tremulous-%{version}.zip
 # Source0-md5:	3df5f7565571fb9524656308347bce1b
+URL:		http://www.tremulous.net/
 Requires:	tremulous-common = %{version}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,7 +26,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_datadir}/games/tremulous/base,%{_pixmapsdir}}
 
 install tremulous/base/* $RPM_BUILD_ROOT%{_datadir}/games/tremulous/base
-install tremulous/tremulous.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
