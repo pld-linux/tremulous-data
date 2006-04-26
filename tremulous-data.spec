@@ -1,0 +1,37 @@
+Summary:	Tremulous data files
+Summary(pl):	Pliki danych dla Tremulous
+Name:		tremulous-data
+Version:	1.1.0
+Release:	0.1
+License:	Creative Commons
+Group:		Applications/Games
+Source0:	tremulous-%{version}.zip
+# Source0-md5:	3df5f7565571fb9524656308347bce1b
+Requires:	tremulous-common = %{version}
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%description
+Tremulous data files.
+
+%description -l pl
+Pliki danych dla Tremulous.
+
+%prep
+%setup -qc
+
+%install
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_datadir}/games/tremulous/base,%{_pixmapsdir}}
+
+install tremulous/base/* $RPM_BUILD_ROOT%{_datadir}/games/tremulous/base
+install tremulous/tremulous.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc tremulous/{CC,ChangeLog,COPYING,manual.pdf}
+%{_datadir}/games/tremulous/base/*
+%{_pixmapsdir}/tremulous.xpm
