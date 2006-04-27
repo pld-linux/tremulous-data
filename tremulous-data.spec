@@ -34,4 +34,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc tremulous/{CC,ChangeLog,COPYING,manual.pdf}
 %{_datadir}/games/tremulous/base/*
-%{_pixmapsdir}/tremulous.xpm
