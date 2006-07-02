@@ -2,12 +2,13 @@ Summary:	Tremulous data files
 Summary(pl):	Pliki danych dla Tremulous
 Name:		tremulous-data
 Version:	1.1.0
-Release:	0.1
+Release:	1
 License:	Creative Commons
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/tremulous/tremulous-%{version}.zip
 # Source0-md5:	3df5f7565571fb9524656308347bce1b
 URL:		http://www.tremulous.net/
+BuildRequires:	unzip
 Requires:	tremulous-common = %{version}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
