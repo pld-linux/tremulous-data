@@ -1,5 +1,5 @@
 Summary:	Tremulous data files
-Summary(pl.UTF-8):   Pliki danych dla Tremulous
+Summary(pl.UTF-8):	Pliki danych dla Tremulous
 Name:		tremulous-data
 Version:	1.1.0
 Release:	1
