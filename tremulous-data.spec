@@ -1,5 +1,5 @@
 Summary:	Tremulous data files
-Summary(pl):	Pliki danych dla Tremulous
+Summary(pl.UTF-8):   Pliki danych dla Tremulous
 Name:		tremulous-data
 Version:	1.1.0
 Release:	1
@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Tremulous data files.
 
-%description -l pl
+%description -l pl.UTF-8
 Pliki danych dla Tremulous.
 
 %prep
