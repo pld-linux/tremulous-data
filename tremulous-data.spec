@@ -4,7 +4,7 @@ Name:		tremulous-data
 Version:	1.1.0
 Release:	1
 License:	Creative Commons
-Group:		Applications/Games
+Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/tremulous/tremulous-%{version}.zip
 # Source0-md5:	3df5f7565571fb9524656308347bce1b
 URL:		http://www.tremulous.net/
