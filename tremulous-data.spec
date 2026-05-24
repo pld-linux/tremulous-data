@@ -2,7 +2,7 @@ Summary:	Tremulous data files
 Summary(pl.UTF-8):	Pliki danych dla Tremulous
 Name:		tremulous-data
 Version:	1.1.0
-Release:	1
+Release:	2
 License:	Creative Commons
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/tremulous/tremulous-%{version}.zip
